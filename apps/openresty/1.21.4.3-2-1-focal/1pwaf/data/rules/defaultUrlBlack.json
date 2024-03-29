@@ -2,7 +2,7 @@
   "rules": [
     {
       "state": "on",
-      "rule": "\\.(htaccess|mysql_history|bash_history|DS_Store|idea|user\\.ini)",
+      "rule": "\\.(htaccess|mysql_history|bash_history|DS_Store|git|idea|user\\.ini)",
       "name": "dirFilter1",
       "type": "dirFilter"
     },
@@ -47,6 +47,12 @@
       "rule": "(?:define|eval|file_get_contents|include|require|require_once|shell_exec|phpinfo|system|passthru|preg_\\w+|execute|echo|print|print_r|var_dump|(fp)open|alert|showmodaldialog)\\(",
       "name": "oneWordTrojan1",
       "type": "oneWordTrojan"
+    },
+    {
+      "state": "on",
+      "rule": "(?:(union(.*?)select))",
+      "name": "sqlInject1",
+      "type": "sqlInject"
     },
     {
       "state": "on",
@@ -122,9 +128,57 @@
     },
     {
       "state": "on",
-      "rule": "(?:(union(.*?)select))",
-      "name": "sqlInject1",
-      "type": "sqlInject"
+      "rule": "/uploadfiles/apache.php.jpeg",
+      "name": "appFilter14",
+      "type": "appFilter"
+    },
+    {
+      "state": "on",
+      "rule": "/xxx/..;/admin/",
+      "name": "appFilter15",
+      "type": "appFilter"
+    },
+    {
+      "state": "on",
+      "rule": "/dvwa/js/dvwaPage.js",
+      "name": "appFilter16",
+      "type": "appFilter"
+    },
+    {
+      "state": "on",
+      "rule": "/api/index.php/v1/config/application",
+      "name": "appFilter17",
+      "type": "appFilter"
+    },
+    {
+      "state": "on",
+      "rule": "/WEB-INF/web.xml",
+      "name": "appFilter18",
+      "type": "appFilter"
+    },
+    {
+      "state": "on",
+      "rule": "/rest/tinymce/1/macro/preview",
+      "name": "appFilter19",
+      "type": "appFilter"
+    },
+    {
+      "state": "on",
+      "rule": "/pages/doenterpagevariables.action",
+      "name": "appFilter20",
+      "type": "appFilter"
+    },
+    {
+      "state": "on",
+      "rule": "/service/rest/beta/repositories/go/group",
+      "name": "appFilter21",
+      "type": "appFilter"
+    },
+    {
+      "state": "on",
+      "rule": "/dvwa/js/add_event_listeners.js",
+      "name": "appFilter22",
+      "type": "appFilter"
     }
   ]
 }

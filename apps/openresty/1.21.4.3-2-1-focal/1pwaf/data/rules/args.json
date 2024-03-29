@@ -90,7 +90,7 @@
       "state": "on",
       "name": "protocolFilter1",
       "rule": "(gopher|doc|php|glob|file|phar|zlib|ftp|ldap|dict|ogg|data)\\:\\/",
-      "type": "protocolFilter", 
+      "type": "protocolFilter",
       "description": "协议过滤"
     },
     {
@@ -103,6 +103,18 @@
       "state": "on",
       "name": "dirFilter2",
       "rule": "java\\.lang",
+      "type": "dirFilter"
+    },
+    {
+      "state": "on",
+      "name": "dirFilter3",
+      "rule": "(?:etc\\/\\W*shadow)",
+      "type": "dirFilter"
+    },
+    {
+      "state": "on",
+      "name": "dirFilter4",
+      "rule": "(?:bin\\/\\W*sh)",
       "type": "dirFilter"
     },
     {
@@ -136,9 +148,9 @@
       "type": "phpExec"
     },
     {
-      "state":"on",
+      "state": "on",
       "name": "scannerFilter1",
-      "rule":"(Acunetix-Aspect|Acunetix-Aspect-Password|Acunetix-Aspect-Queries|X-WIPP|X-RequestManager-Memo|X-Request-Memo|X-Scan-Memo)",
+      "rule": "(Acunetix-Aspect|Acunetix-Aspect-Password|Acunetix-Aspect-Queries|X-WIPP|X-RequestManager-Memo|X-Request-Memo|X-Scan-Memo)",
       "type": "scannerFilter"
     }
   ]

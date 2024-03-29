@@ -89,5 +89,11 @@
     "state": "on",
     "code": 403,
     "action": "deny"
+  },
+  "methodWhite": {
+    "type": "methodWhite",
+    "state": "on",
+    "code": 444,
+    "action": "deny"
   }
 }
