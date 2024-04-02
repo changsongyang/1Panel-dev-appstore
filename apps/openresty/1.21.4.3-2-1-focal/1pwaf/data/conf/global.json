@@ -2,13 +2,13 @@
   "waf": {
     "state": "on",
     "mode": "protection",
-    "secret": "qwer1234"
+    "secret": ""
   },
   "redis": {
     "state": "off",
-    "host": "127.0.0.1",
+    "host": "",
     "port": 6379,
-    "password": "Calong@2015",
+    "password": "",
     "ssl": false,
     "poolSize": 10
   },
@@ -47,12 +47,13 @@
     "action": "deny"
   },
   "notFoundCount": {
-    "state": "off",
+    "state": "on",
     "type": "notFoundCount",
-    "threshold": 10,
-    "duration": 60,
+    "threshold": 30,
+    "duration": 10,
     "action": "deny",
     "ipBlock": "on",
+    "code": 403,
     "ipBlockTime": 600
   },
   "methodWhite": {
@@ -97,9 +98,10 @@
   "cc": {
     "state": "off",
     "type": "cc",
+    "rule": "cc",
     "tokenTimeOut": 1800,
-    "threshold": 120,
-    "duration": 60,
+    "threshold": 100,
+    "duration": 10,
     "action": "deny",
     "ipBlock": "on",
     "ipBlockTime": 600
@@ -112,13 +114,13 @@
     "ipBlockTime": 600
   },
   "attackCount": {
-    "state": "off",
+    "state": "on",
     "type": "attackCount",
-    "threshold": 20,
+    "threshold": 10,
     "duration": 60,
     "action": "deny",
     "ipBlock": "on",
-    "ipBlockTime": 600
+    "ipBlockTime": 3000
   },
   "fileExt": {
     "state": "on",
