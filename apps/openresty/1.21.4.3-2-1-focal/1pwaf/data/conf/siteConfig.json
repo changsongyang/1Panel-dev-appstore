@@ -31,10 +31,11 @@
   },
   "geoRestrict": {
     "state": "off",
-    "rules": [
-      "CN"
-    ],
-    "action": "allow"
+    "rules": [],
+    "code": 403,
+    "action": "deny",
+    "type": "geoRestrict",
+    "res": "geo"
   },
   "defaultIpBlack": {
     "state": "on",
