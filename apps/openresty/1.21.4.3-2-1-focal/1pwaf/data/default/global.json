@@ -71,12 +71,12 @@
     "ipBlockTime": 600
   },
   "geoRestrict": {
-    "state": "on",
+    "state": "off",
     "rules": [],
     "code": 403,
     "action": "deny",
-    "res": "geo",
-    "type": "geoRestrict"
+    "type": "geoRestrict",
+    "res": "geo"
   },
   "defaultIpBlack": {
     "state": "on",
