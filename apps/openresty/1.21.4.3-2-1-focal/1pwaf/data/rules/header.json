@@ -3,7 +3,7 @@
     {
       "state": "on",
       "name": "appFilter1",
-      "rule": "/TomcatBypass/Command/Base64",
+      "rule": "TomcatBypass|Command|Base64",
       "type": "appFilter"
     },
     {

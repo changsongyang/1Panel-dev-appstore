@@ -17,7 +17,7 @@ window.onload = function () {
                 window.location.reload();
             }
         };
-        const requestUrl = "%s-%s-%s";
+        const requestUrl = "%s-%s-%s-%s-%s-";
         xhr.open("GET", requestUrl, true);
         xhr.send();
     }
