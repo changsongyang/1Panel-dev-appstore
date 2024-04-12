@@ -37,12 +37,6 @@
     "type": "geoRestrict",
     "res": "geo"
   },
-  "defaultIpBlack": {
-    "state": "on",
-    "type": "defaultIpBlack",
-    "code": 403,
-    "action": "deny"
-  },
   "xss": {
     "state": "on",
     "type": "xss",
